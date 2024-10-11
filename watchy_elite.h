@@ -17,10 +17,18 @@ class WatchyElite : public Watchy{
         SunSet sun;
         void drawBattery();
         void drawTime();
-        void drawMinute();
-        void drawHour();
-        void drawMoon();
-        unsigned int DaysPerMonth(unsigned int, unsigned int);
+        void drawMinute(int16_t, float);
+        void drawHour(int16_t, float);
+        void drawMoon(int16_t, float);
+        int16_t DaysPerMonth(int16_t, int16_t);
+
+
+        void drawOuterRing(int16_t);
+        void drawDayRing(int16_t);
+        void drawMinuteRing(int16_t);
+        void drawHourRing(int16_t);
+        void drawRing(int16_t, float, int16_t);
+
 };
 
 #endif
